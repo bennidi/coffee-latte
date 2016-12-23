@@ -1,11 +1,8 @@
 {
-  "name": "caramel",
+  "name": "coffee-latte",
   "version": "1.0.0",
   "description": "Sweet mixins for CoffeeScript",
-  "main": "index.js",
-  "scripts": {
-    "test": "gulp test:run"
-  },
+  "main": "coffee.latte.js",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/bennidi/caramel.git"
@@ -18,9 +15,9 @@
   "author": "bennidi",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/bennidi/caramel/issues"
+    "url": "https://github.com/bennidi/coffee-latte/issues"
   },
-  "homepage": "https://github.com/bennidi/caramel#readme",
+  "homepage": "https://github.com/bennidi/coffee-latte#readme",
   "browserify": {
     "transform": [
       [
@@ -59,5 +56,10 @@
     "vinyl-buffer": "^1.0.0",
     "vinyl-source-stream": "^1.1.0",
     "yargs": "^4.2.0"
+  },
+  "scripts":{
+    "prepublish": "npm run compile",
+    "compile": "gulp build",
+    "test" : "gulp test"
   }
 }

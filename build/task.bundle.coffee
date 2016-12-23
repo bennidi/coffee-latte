@@ -25,6 +25,7 @@ bundle = ->
   # Specify the entry point of your app
     entries   :['src/index.coffee']
     extensions:['.coffee']
+    standalone: 'coffee-latte'
 
   bundle = ->
     # Log when bundling starts
@@ -37,7 +38,7 @@ bundle = ->
     # Use vinyl-source-stream to make the
     # stream gulp compatible. Specifiy the
     # desired output filename here.
-    .pipe source 'index.js'
+    .pipe source 'coffee-latte.js'
     .pipe buffer()
     # Specify the output destination
     .pipe gulp.dest dest
@@ -46,6 +47,6 @@ bundle = ->
 
   bundle()
 
-bundle.description = "Build caramel bundle"
+bundle.description = "Build latte bundle"
 
 gulp.task "build", bundle
