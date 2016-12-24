@@ -1,11 +1,11 @@
 {
   "name": "coffee-latte",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Sweet mixins for CoffeeScript",
-  "main": "coffee.latte.js",
+  "main": "coffee-latte.js",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/bennidi/caramel.git"
+    "url": "git+https://github.com/bennidi/coffee-latte.git"
   },
   "keywords": [
     "coffeescript",
