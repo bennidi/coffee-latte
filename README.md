@@ -25,8 +25,10 @@ class NamedIdentifiable extends Mixin
   
   constructor:-> super() # super call is required
   
-  
-expect(new NamedIdentifiable()).to.have
+
+instance = new NamedIdentifiable() 
+expect(instance).to.have.property '_id'
+expect(instance.nickname()).to.be 'nickundefined'
 
 
 ```
